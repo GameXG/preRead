@@ -56,7 +56,7 @@ func (pc *preTcpConn) ClosePre() error {
 }
 //复位预读偏移
 func (pc *preTcpConn) ResetPreOffset() error {
-	return pc.pr.NewPre()
+	return pc.pr.ResetPreOffset()
 }
 
 func (pc *preTcpConn) Read(b []byte) (n int, err error) {
