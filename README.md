@@ -1,4 +1,6 @@
 # preRead
+[![Build Status](https://travis-ci.org/GameXG/preRead.svg?branch=master)](https://travis-ci.org/GameXG/preRead)
+
 golang 无限 预读 Read 。
 
 解析协议时经常出现一个协议不匹配需要切换到下一个协议尝试解析，但是前一个协议已经读取了一部分字节，标准的 io.net 只能回退一个 byte ，很多时候都不够用。
